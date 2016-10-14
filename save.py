@@ -1,4 +1,4 @@
-def slLabels(load, file, section, auto):
+def slLabels(load):
 	saveInfo=[]
 	if(os.path.exists("/Saves/autosave.txt")):
 		file=open("/Saves/save"+intg,"r")
