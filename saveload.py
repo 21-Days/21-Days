@@ -1,4 +1,4 @@
-def slLabels(load):
+def labels(load):
 	saveInfo=[]
 	if(os.path.exists("/Saves/autosave.txt")):
 		file=open("/Saves/save"+intg,"r")
@@ -28,7 +28,7 @@ def slLabels(load):
 		returnl.add("Slot3-"+saveinfo[3])
 		returnl.add("Slot4-"+saveinfo[4])
 	return returnl
-def gloader(ch):
+def load(ch):
 	if(ch==0):
 		file=open("autosave.txt", "r")
 		main.interpreter(currentfile,"", True,section)
@@ -44,7 +44,7 @@ def gloader(ch):
 	elif(ch==4):
 		file=open("Save4.txt", "r")
 		main.interpreter(currentfile,"", True,section)
-def gsaver(ch):
+def save(ch):
 	if(ch==0):
 		file=open("autosave.txt","r")
 		file.write(file+"/n")
