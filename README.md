@@ -43,6 +43,8 @@ QuickLinks:
 UNDER CONSTRUCTION
 
 # Credits
+@RGTN
+
 @Roadkillsanta
 
 @GoobysTheName
