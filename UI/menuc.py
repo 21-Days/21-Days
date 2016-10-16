@@ -1,6 +1,5 @@
 import main
-import menu_sl
-import menu_options
+import menu
 from tkinter import *
 
 def Save():
@@ -30,3 +29,9 @@ def Load():
 	Slot4.grid(row=5,column=0)
 def options():
 	print("Undeveloped")
+def confirm():
+	root=tkinter.tk()
+	Label(root,text="Are you sure?").grid(row=0,column=0)
+	Button(root,text="Yes",command=menu.main()).grid(row=1,column=0)
+	Button(root,text="No",command=menu.ingame()).grid(row=2,column=0)
+	
