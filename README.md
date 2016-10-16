@@ -43,8 +43,8 @@ QuickLinks:
 UNDER CONSTRUCTION
 
 # Credits
-Roadkillsanta
+@Roadkillsanta
 
-GoobysTheName
+@GoobysTheName
 
 JNZG
