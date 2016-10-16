@@ -32,9 +32,7 @@ Planned Updates:
 
 	-Expand 'StoryScript' abilities
 	
-	-Add graphical interface with Java or Tkinter
-	
-	-Implement Save/Loadgame Feature
+	-Develop all sections of Graphical Menu
 
 # StoryScript Docs
 
