@@ -1,4 +1,7 @@
 import time
+from UI import gui
+from UI import saveload
+from tkinter import *
 
 global currentSection
 global file
@@ -82,7 +85,7 @@ def run():
 			random.randint(arggggggghhhs[0], arggggggghhhs[1])
 		elif("" in line):
 		elif("SAVE" in line.upper()):
-			
+			saveload.save(0)
 		elif(line=="FINAL"):
 			exitcode=0
 			break
@@ -98,13 +101,6 @@ def run():
 	temp.close()
 	file.close()
 	return exitcode
-def start():
-	print("21 DAYS")
-	time.sleep(4)
-	print("A GAME MADE BY EN, WJ, JZ")
-	
-	interpreter("storyline.txt")
-	input("THANKS FOR PLAYING")
-
 class main():
-	start()
+	root=tkinter.Tk()
+	gui.main(root)
