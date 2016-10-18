@@ -3,6 +3,7 @@ import menuc
 import main
 
 def main():
+	function.clear()
 	root=tkinter.Tk()
 	file=open("menutitles.txt","r")
 	sub=file.readlines()
