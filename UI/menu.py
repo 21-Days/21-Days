@@ -1,6 +1,7 @@
 from tkinter import *
 import menuc
 import main
+import function
 
 def main():
 	function.clear()
