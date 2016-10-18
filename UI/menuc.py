@@ -15,7 +15,6 @@ def Save(root,main):
 		Button(root, text="Back", command=gui.ingame()).grid(row=5,column=0)
 def Load(root,main):
 	function.clear()
-	root=tkinter.Tk()
 	labels=saveload.labels(True)
 	Label(root, text=labels[0], font=32).grid(row=0,column=0)
 	Button(root, text=labels[1], command=saveload.load(0)).grid(row=1,column=0)
@@ -36,7 +35,6 @@ def options(root,main):
 		Button(root, text="Back", command=gui.ingame()).grid(row=6,column=0)
 def confirm(root):
 	function.clear(root)
-	root=tkinter.tk()
 	Label(root,text="Are you sure?").grid(row=0,column=0)
 	Button(root,text="Yes",command=gui.main()).grid(row=1,column=0)
 	Button(root,text="No",command=gui.ingame()).grid(row=2,column=0)
