@@ -22,9 +22,9 @@ def main(root):
 	Button(root,text="Credits",command=menuc.credits(root)).grid(row=6,column=0)
 	Button(root,text="Visit us on Github!",command=webbrowser.open("http://github.com/RGTN",new=1,autoraise=True)).grid(row=7,column=0)
 	Button(root,text="Quit",command=main.exit()).grid(row=8,column=0)
-	mainloop()
+	root.mainloop()
 def ingame(root):
-	function.clear()
+	function.clear(root)
 	file=open("menutitles.txt","r")
 	title=file.readlines()
 	Label(root,text=title[random.randint(0,15)]).grid(row=0,column=0)
@@ -33,9 +33,6 @@ def ingame(root):
 	Button(root,text="Load Game",command=menuc.load(root)).grid(row=3,column=0)
 	Button(root,text="Options",command=menuc.options(root)).grid(row=4,column=0)
 	Button(root,text="Quit",command=menuc.confirmquit(root)).grid(row=5,column=0)
-	mainloop()
-class main:
-	root=tkinter.Tk()
-	main(root)
-	mainloop()
-	
+	root.mainloop()
+def exit()
+	exit()
