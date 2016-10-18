@@ -5,7 +5,7 @@ import function
 from lib import webbrowser
 
 def main(root):
-	function.clear()
+	function.clear(root)
 	file=open("menutitles.txt","r")
 	sub=file.readlines()
 	Label(root,text="21 Days",font=32).grid(0,0)
