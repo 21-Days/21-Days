@@ -4,9 +4,8 @@ import main
 import function
 from lib import webbrowser
 
-def main():
+def main(root=tkinter.Tk()):
 	function.clear()
-	root=tkinter.Tk()
 	file=open("menutitles.txt","r")
 	sub=file.readlines()
 	Label(root,text="21 Days",font=32).grid(0,0)
@@ -22,9 +21,8 @@ def main():
 	Button(root,text="Visit us on Github!",command=webbrowser.open("http://github.com/RGTN",new=1,autoraise=True)).grid(row=7,column=0)
 	Button(root,text="Quit",command=main.exit()).grid(row=8,column=0)
 	mainloop()
-def ingame():
+def ingame(root=tkinter.Tk()):
 	function.clear()
-	root=tkinter.Tk()
 	file=open("menutitles.txt","r")
 	title=file.readlines()
 	Label(root,text=title[random.randint(0,15)]).grid(row=0,column=0)
@@ -35,4 +33,5 @@ def ingame():
 	Button(root,text="Quit",command=menuc.confirmquit()).grid(row=5,column=0)
 	mainloop()
 class main:
+	root=tkinter.Tk()
 	
