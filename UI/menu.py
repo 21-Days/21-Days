@@ -16,6 +16,7 @@ def main():
 	Button(root,text="Credits",command=menuc.credits()).grid(row=6,column=0)
 	Button(root,text="Quit",command=main.exit()).grid(row=7,column=0)
 def ingame():
+	function.clear()
 	root=tkinter.Tk()
 	file=open("menutitles.txt","r")
 	title=file.readlines()
