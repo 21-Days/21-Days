@@ -43,7 +43,7 @@ def credits(root, main):
 	Label(root, text="Writer: BOOMCHICKEN (JZ)", font=16).grid(row=4,column=0)
 	Button(root, text="@RGTN (github.com/RGTN)", font=16, command=webbrowser.open("http:github.com/RGTN", new=2, autoraise=True)).grid(row=5,column=0)
 	Label(root, text="Special Thanks: GitHub (github.com)", font=16).grid(row=6,column=0)
-	Label(root, text="", font=16).grid(row=7,column=0)
+	Label(root, text=" ", font=16).grid(row=7,column=0)
 	if(main==True):
 		Button(root, text="Back", font=16, command=gui.main()).grid(row=8,column=0)
 	else:
