@@ -4,6 +4,11 @@ import main
 import function
 from lib import webbrowser
 
+def run():
+	function.clear(root)
+	Label(root, text="21 Days", font=32).grid(row=0,column=0)
+	out=TextArea(root,).grid()
+	main.interpreter("storyline.txt")
 def main(root):
 	function.clear(root)
 	file=open("menutitles.txt","r")
@@ -16,7 +21,7 @@ def main(root):
 	else:
 		Button(root,text="Easter Egg Button",command=).grid(row=3,column=0)
 	Button(root,text=txt,font=12,command=textn+=1).grid(row=1,column=0)
-	Button(root,text="Play!",command=GUI_main.run(root,True)).grid(row=2,column=0)
+	Button(root,text="Play!",command=run()).grid(row=2,column=0)
 	Button(root,text="Load Save",command=menuc.load(root,True)).grid(row=4,column=0)
 	Button(root,text="Options",command=menuc.options(root,True)).grid(row=5,column=0)
 	Button(root,text="Credits",command=menuc.credits(root,True)).grid(row=6,column=0)
