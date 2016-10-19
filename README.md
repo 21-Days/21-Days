@@ -8,9 +8,11 @@ Visit Us at http://21days.RGTN.ml
 21 Days is a decision-making text based game in which they must hide from an evil alias that was spawned in their infinite tripping world that is nearly inescapable. What would you do?
 
 # Updates
-New Updates:
+MAJOR UPDATES:
+	
+	-ADDED GUI CAPABILITY!!!!!!!!!!
 
-	-Merged Master and Modded branch
+New Updates:
 
 	-Added ability to execute python code when needed
 
@@ -31,8 +33,6 @@ Planned Updates:
 	-Add generator ability to randomly generate portions of the story.
 
 	-Expand 'StoryScript' abilities
-	
-	-Develop all sections of Graphical Menu
 
 # StoryScript Docs
 
