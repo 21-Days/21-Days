@@ -1,14 +1,10 @@
 from tkinter import *
 import menuc
+import misc
 import main
 import function
 from lib import webbrowser
 
-def run():
-	function.clear(root)
-	Label(root, text="21 Days", font=32).grid(row=0,column=0)
-	out=TextArea(root,).grid()
-	main.interpreter("storyline.txt")
 def main(root):
 	function.clear(root)
 	file=open("menutitles.txt","r")
@@ -17,7 +13,7 @@ def main(root):
 	textn=random.randint(0,15)
 	txt=sub[textn]
 	if("EASTER" in txt):
-		Button(root,text="Easter Egg Button",command=).grid(row=3,column=0)
+		Button(root,text="Easter Egg Button",command=misc.easteregg()).grid(row=3,column=0)
 	else:
 		Button(root,text="Easter Egg Button",command=).grid(row=3,column=0)
 	Button(root,text=txt,font=12,command=textn+=1).grid(row=1,column=0)
