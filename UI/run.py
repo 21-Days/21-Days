@@ -65,8 +65,8 @@ def result(textbox,inp):
 	else:
 def run(root):
 	function.clear(root)
-	Label(root, text="21 Days", font=32).grid(row=0,column=0, columnspan=2)
-	out=Text(root,).grid(row=1, column=0, rowspan=3, columnspan=2)
+	Label(root, text="21 Days", font=32).grid(row=0,column=1, columnspan=2)
+	out=Text(root).grid(row=1, column=0, rowspan=3, columnspan=3)
 	file=open("binds","r")
 	key=file.readlines()
 	tint=0
@@ -75,3 +75,4 @@ def run(root):
 		out.bind(b,result(key[tint]))
 		tint+=1
 	main.interpreter(out,"storyline.txt")
+	choice=Frame(root).grid(row=1, column=4)
