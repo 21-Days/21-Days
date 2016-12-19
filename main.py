@@ -101,6 +101,4 @@ def run():
 	temp.close()
 	file.close()
 	return exitcode
-class main():
-	root=tkinter.Tk()
-	gui.main(root)
+class main:
