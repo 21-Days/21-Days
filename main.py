@@ -92,6 +92,7 @@ def run():
 		elif(line=="*START*"):
 			active=True
 		elif(line=="*END*"):
+			out=
 		else:
 			inesa=input(line)
 			if("exit" in inesa.lower()):
