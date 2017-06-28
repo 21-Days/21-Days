@@ -1,10 +1,8 @@
 import time
-from UI import saveload
 
 global currentSection
 global file
 global exitcode
-
 def interpreter(fille, split, loadgame, section):
 	if(split!=""):
 		if(split.upper()=="WAY0" or split.upper()=="WAY 0" or split.upper()=="0")
@@ -84,6 +82,7 @@ def run():
 		elif("" in line):
 		elif("SAVE" in line.upper()):
 			saveload.save(0)
+			print("GAME AUTOSAVED.")
 		elif(line=="FINAL"):
 			exitcode=0
 			break
@@ -95,7 +94,7 @@ def run():
 			inesa=input(line)
 			if("exit" in inesa.lower()):
 				exitcode
-			elif("save")
+			elif("save"):
 		int+=1
 	temp.close()
 	file.close()
