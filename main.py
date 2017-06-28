@@ -1,7 +1,5 @@
 import time
-from UI import gui
 from UI import saveload
-from tkinter import *
 
 global currentSection
 global file
@@ -102,4 +100,3 @@ def run():
 	temp.close()
 	file.close()
 	return exitcode
-class main:
