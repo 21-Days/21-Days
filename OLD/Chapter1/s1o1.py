@@ -4,7 +4,7 @@ def way0(name):
     input.print("YOU: It's okay, I got it.")
     input.print("Rachel fades into the darkness and you are left alone.")
     input("Moments later, you hear a scream.")
-    input("What happened, you think.")
+    input("What happened?!, you think.")
     input("Your vision is fading.")
     input("You are plunged into absolute darkness.")
     input("Your head falls to the ground, and you are asleep.")
