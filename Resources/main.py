@@ -10,7 +10,7 @@ def interpreter(fille, split, loadgame, section):
 		elif(split.upper()=="WAY1" or split.upper()=="WAY 1" or split.upper()=="1")
 			file=open("/Resources/"+fille+"-1.txt","r")
 		else:
-			input("ERROR")
+			input("LOAD_ERROR, press any key to exit.")
 			exit()
 	elif(loadgame==True):
 		file=open("/Resources/"+fille,"r")
@@ -95,6 +95,7 @@ def run():
 			if("exit" in inesa.lower()):
 				exitcode
 			elif("save"):
+				saveload.save(input("Which spot would you like to save in? (Type in the number)\n"+saveload.getinfo("all")))
 		int+=1
 	temp.close()
 	file.close()
