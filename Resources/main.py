@@ -64,14 +64,9 @@ def interpreter(fille, split, loadgame, section):
 			ple= int(lomlom)
 			file.seek(ple, 0)
 		elif("python" in line.lower()):
-			kmslol=line.lower().replace("python(","")
-			lolsmk=kmslol.replace(")","")
-			filelele=open("run.py", "wb")
-			k="""
-def run():
-	"""+lolsmk+"""
-#THIS IS ONLY TEMPORARY..."""
-			filelele.write(k)
+			code_un=line.lower().replace("python(","")
+			code=code_un.replace(")","")
+			exec(code)
 			if(args):
 				import run
 				run.run()
